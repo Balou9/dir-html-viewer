@@ -1,0 +1,21 @@
+{
+  "name": "dir-html-viewer",
+  "version": "0.0.0",
+  "description": "Search and preview html files in given directory",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ballify resources/index.html --live --base64Images=false --brotli=false --output=resources/ball.html",
+    "test": "tape test.js",
+    "prestart": "ballify resources/index.html --live=false --base64Images=false --brotli=false --gzip=true --output=resources/ball.html.gz",
+    "start": "node index localhost 419 resources/ball.html.gz"
+  },
+  "keywords": [
+    "html",
+    "viewer"
+  ],
+  "author": "Emmanuel Owosekun",
+  "license": "MIT",
+  "devDependencies": {
+    "ballify": "^1.3.0"
+  }
+}
