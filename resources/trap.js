@@ -8,13 +8,14 @@ var trap = {
     if (this._header) return this._header
     this._header = make('div')
     this._header.id = 'header'
-    this._header.innerText = 'header'
+    this._header.innerText = 'dir-html-viewer'
     return this._header
   },
   main () {
     if (this._main) return this._main
     this._main = make('div')
-    this.main.id = 'main'
+    this._main.id = 'main'
+    this._main_innerText = 'main'
     appendChildren(this._main, this.mainSidebar(), this.mainBody())
     return this._main
   },

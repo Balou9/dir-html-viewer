@@ -1,0 +1,25 @@
+#header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: 550px;
+}
+
+#mainSidebar {
+  display: grid;
+}
+
+#mainBody {
+  display: grid;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px;
+}
