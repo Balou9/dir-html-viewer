@@ -1,8 +1,8 @@
 {
   "name": "dir-html-viewer",
-  "version": "0.0.0",
-  "description": "Search and preview html files in given directory",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "See html links in directory for your own health",
+  "main": "app.js",
   "scripts": {
     "dev": "ballify resources/index.html --live --base64Images=false --brotli=false --output=resources/ball.html",
     "test": "tape test.js",
@@ -11,11 +11,13 @@
   },
   "keywords": [
     "html",
-    "viewer"
+    "viewer",
+    "dir"
   ],
-  "author": "Emmanuel Owosekun",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
-    "ballify": "^1.3.0"
+    "ballify": "^1.3.0",
+    "dir-html-url": "^1.0.0"
   }
 }
